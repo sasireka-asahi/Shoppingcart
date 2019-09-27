@@ -11,685 +11,114 @@
         "steps": [
           {
             "result": {
-              "duration": 9990741889,
+              "duration": 10380017918,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User is in loginpage",
+            "line": 5,
+            "name": "User is in landing page",
             "match": {
               "location": "LoginPageSteps.user_is_in_loginpage()"
             },
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 21,
-        "name": "To verify login page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-login-page;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+          },
           {
             "result": {
-              "duration": 2859598592,
+              "duration": 1192848649,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User has to enter the \"Navin\",\"12345\" and click the login button",
+            "line": 6,
+            "name": "User has to click the Signin button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Navin\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"12345\"",
-                  "offset": 30
-                }
-              ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_login_button(String,String)"
+              "location": "LoginPageSteps.User_has_to_click_the_Signin_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 8541310,
+              "duration": 19145686,
               "status": "passed"
             },
-            "line": 14,
-            "name": "when user enters the wrong credentials then user should not able to login to Homepage",
+            "line": 7,
+            "name": "Signin button navigate to open the  Authentication page",
             "match": {
-              "location": "LoginPageSteps.when_user_enters_the_wrong_credentials_then_user_should_not_able_to_login_to_Homepage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2083579567,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginPageSteps.close_the_browser()"
+              "location": "LoginPageSteps.signin_button_navigate_to_open_the_Authentication_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "line": 3,
-        "name": "",
+        "line": 46,
+        "name": ": Verify signup page valid input",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8985960371,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in loginpage",
-            "match": {
-              "location": "LoginPageSteps.user_is_in_loginpage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 22,
-        "name": "To verify login page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-login-page;;3",
+        "id": "login-action;:-verify-signup-page-valid-input;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1789558599,
+              "duration": 3900080647,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User has to enter the \"Kumar\",\"54321\" and click the login button",
+            "line": 42,
+            "name": "User has to enter the valid \"ss12345@mail.com\" \"ram\",\"sita\",\"Asahi@123\",\"Asahi,46 Fanepet 2nd Street\",\"chennai\",\"32\",\"600091\",\"United States\",\"9944021254\",\"address1\" and click the register button and click the register button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Kumar\"",
-                  "offset": 22
+                  "val": "\"ss12345@mail.com\"",
+                  "offset": 28
                 },
                 {
-                  "val": "\"54321\"",
-                  "offset": 30
+                  "val": "\"ram\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"sita\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"Asahi@123\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Asahi,46 Fanepet 2nd Street\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"chennai\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"32\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"600091\"",
+                  "offset": 117
+                },
+                {
+                  "val": "\"United States\"",
+                  "offset": 126
+                },
+                {
+                  "val": "\"9944021254\"",
+                  "offset": 142
+                },
+                {
+                  "val": "\"address1\"",
+                  "offset": 155
                 }
               ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_login_button(String,String)"
+              "location": "LoginPageSteps.registrationvalid(String,String,String,String,String,String,String,String,String,String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7017254,
+              "duration": 140411961,
               "status": "passed"
             },
-            "line": 14,
-            "name": "when user enters the wrong credentials then user should not able to login to Homepage",
-            "match": {
-              "location": "LoginPageSteps.when_user_enters_the_wrong_credentials_then_user_should_not_able_to_login_to_Homepage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2111562683,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginPageSteps.close_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7097887144,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in loginpage",
-            "match": {
-              "location": "LoginPageSteps.user_is_in_loginpage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 23,
-        "name": "To verify login page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-login-page;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1705889146,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User has to enter the \"Suresh\",\"78999\" and click the login button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Suresh\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"78999\"",
-                  "offset": 31
-                }
-              ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_login_button(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10110877,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "when user enters the wrong credentials then user should not able to login to Homepage",
-            "match": {
-              "location": "LoginPageSteps.when_user_enters_the_wrong_credentials_then_user_should_not_able_to_login_to_Homepage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2116191170,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginPageSteps.close_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9472232494,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in loginpage",
-            "match": {
-              "location": "LoginPageSteps.user_is_in_loginpage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "To verify login page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-login-page;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2202664111,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User has to enter the \"Vijay\",\"444444\" and click the login button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Vijay\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"444444\"",
-                  "offset": 30
-                }
-              ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_login_button(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7486019,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "when user enters the wrong credentials then user should not able to login to Homepage",
-            "match": {
-              "location": "LoginPageSteps.when_user_enters_the_wrong_credentials_then_user_should_not_able_to_login_to_Homepage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2084711659,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginPageSteps.close_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6834309738,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in loginpage",
-            "match": {
-              "location": "LoginPageSteps.user_is_in_loginpage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 38,
-        "name": "To verify the registration page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-the-registration-page;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1535090824,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User has to enter the \"Navin\",\"kumar\",\"9997777444\",\"Navin@123\",\"12\",\"Apr\",\"1995\" and click the register button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Navin\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"kumar\"",
-                  "offset": 30
-                },
-                {
-                  "val": "\"9997777444\"",
-                  "offset": 38
-                },
-                {
-                  "val": "\"Navin@123\"",
-                  "offset": 51
-                },
-                {
-                  "val": "\"12\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"Apr\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"1995\"",
-                  "offset": 74
-                }
-              ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_register_button(String,String,String,String,String,String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 15463559,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "when user enters the correct then otp is generated to their mobile number",
-            "match": {
-              "location": "LoginPageSteps.when_user_enters_the_correct_then_otp_is_generated_to_their_mobile_number()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2082233574,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginPageSteps.close_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12944669788,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in loginpage",
-            "match": {
-              "location": "LoginPageSteps.user_is_in_loginpage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 39,
-        "name": "To verify the registration page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-the-registration-page;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1736945403,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User has to enter the \"Kavin\",\"Kumar\",\"7778888999\",\"Kumar@123\",\"13\",\"Jun\",\"2001\" and click the register button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Kavin\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"Kumar\"",
-                  "offset": 30
-                },
-                {
-                  "val": "\"7778888999\"",
-                  "offset": 38
-                },
-                {
-                  "val": "\"Kumar@123\"",
-                  "offset": 51
-                },
-                {
-                  "val": "\"13\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"Jun\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"2001\"",
-                  "offset": 74
-                }
-              ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_register_button(String,String,String,String,String,String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 9611961,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "when user enters the correct then otp is generated to their mobile number",
-            "match": {
-              "location": "LoginPageSteps.when_user_enters_the_correct_then_otp_is_generated_to_their_mobile_number()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2094736633,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginPageSteps.close_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 14764734528,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in loginpage",
-            "match": {
-              "location": "LoginPageSteps.user_is_in_loginpage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 40,
-        "name": "To verify the registration page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-the-registration-page;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1209368476,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User has to enter the \"Saravanan\",\"nandha\",\"44444555554\",\"nandha@123\",\"12\",\"Jul\",\"2005\" and click the register button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Saravanan\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"nandha\"",
-                  "offset": 34
-                },
-                {
-                  "val": "\"44444555554\"",
-                  "offset": 43
-                },
-                {
-                  "val": "\"nandha@123\"",
-                  "offset": 57
-                },
-                {
-                  "val": "\"12\"",
-                  "offset": 70
-                },
-                {
-                  "val": "\"Jul\"",
-                  "offset": 75
-                },
-                {
-                  "val": "\"2005\"",
-                  "offset": 81
-                }
-              ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_register_button(String,String,String,String,String,String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10883429,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "when user enters the correct then otp is generated to their mobile number",
-            "match": {
-              "location": "LoginPageSteps.when_user_enters_the_correct_then_otp_is_generated_to_their_mobile_number()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2316228717,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "close the browser",
-            "match": {
-              "location": "LoginPageSteps.close_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 15197124263,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in loginpage",
-            "match": {
-              "location": "LoginPageSteps.user_is_in_loginpage()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "line": 41,
-        "name": "To verify the registration page",
-        "description": "",
-        "id": "to-validate-the-login-functionality;to-verify-the-registration-page;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2237201972,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User has to enter the \"anand\",\"Kumar\",\"7777788888\",\"singa@123\",\"13\",\"Mar\",\"1984\" and click the register button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"anand\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"Kumar\"",
-                  "offset": 30
-                },
-                {
-                  "val": "\"7777788888\"",
-                  "offset": 38
-                },
-                {
-                  "val": "\"singa@123\"",
-                  "offset": 51
-                },
-                {
-                  "val": "\"13\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"Mar\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"1984\"",
-                  "offset": 74
-                }
-              ],
-              "location": "LoginPageSteps.user_has_to_enter_the_and_click_the_register_button(String,String,String,String,String,String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 21877223,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "when user enters the correct then otp is generated to their mobile number",
-            "match": {
-              "location": "LoginPageSteps.when_user_enters_the_correct_then_otp_is_generated_to_their_mobile_number()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2124514594,
-              "status": "passed"
-            },
-            "line": 34,
+            "line": 43,
             "name": "close the browser",
             "match": {
               "location": "LoginPageSteps.close_the_browser()"
@@ -699,9 +128,9 @@
         ]
       }
     ],
-    "name": "To Validate the login functionality",
+    "name": "Login Action",
     "description": "",
-    "id": "to-validate-the-login-functionality",
+    "id": "login-action",
     "keyword": "Feature",
     "uri": "src/test/resources/Feature/login.feature",
     "tags": []

@@ -10,14 +10,161 @@ public class LoginpagePojoClass extends BaseClass1{
 	public LoginpagePojoClass() {
 		PageFactory.initElements(driver, this);
 	}
-
-	@FindBy(id = "email")
-
+	//sign inlink
+	@FindBy(linkText="Sign in")
+	private WebElement signin;
+	
+	//signin email
+	public WebElement getUserName() {
+		return userName;
+	}
+	@FindBy(id ="email")
 	private WebElement userName;
-
-	@FindBy(id = "pass")
-
+	
+	//signin password
+	@FindBy(xpath = "//*[@id='passwd']")
 	private WebElement password;
+
+	public WebElement getPassword() {
+		return password;
+	}
+	
+	//Signin submit button
+	@FindBy(id = "SubmitLogin")
+	private WebElement btn;
+	public WebElement getBtn() {
+		return btn;
+	}
+	
+	//signup email
+		public WebElement getsignupemail() {
+			return signupemail;
+		}
+		@FindBy(xpath="//*[@id='email_create']")
+		private WebElement signupemail;
+	
+	//sign up create an account button
+		@FindBy(xpath="//*[@id='SubmitCreate']")
+		private WebElement createsignupbtn;
+		public WebElement getcreateBtn() {
+			return createsignupbtn;
+		}
+
+		
+		//reg firstname
+		public WebElement getregFirstname() {
+			return reguserName;
+		}
+		@FindBy(xpath="//*[@id='customer_firstname']")
+		private WebElement reguserName;
+		
+		
+	//reg lastname
+		public WebElement getregLastname() {
+			return reglastName;
+		}
+		@FindBy(xpath="//*[@id='customer_lastname']")
+		private WebElement reglastName;
+		
+		
+	//reg password
+		public WebElement getregpassword() {
+			return regpasswdName;
+		}
+		@FindBy(xpath="//*[@id='passwd']")
+		private WebElement regpasswdName;
+		
+	//reg Address
+		public WebElement getregaddress() {
+			return regaddress;
+		}
+		@FindBy(xpath="//*[@id='address1']")
+		private WebElement regaddress;
+		
+	//reg city
+		public WebElement getregcity() {
+			return regcity;
+		}
+		@FindBy(xpath="//*[@id='city']")
+		private WebElement regcity;	
+		
+	//reg state
+		public WebElement getstate() {
+			return regstate;
+		}
+		@FindBy(xpath = "//select[contains(@name,'id_state')]")
+		private WebElement regstate;
+		
+	//reg zip
+		public WebElement getregzip() {
+			return regzip;
+		}
+		@FindBy(xpath="//*[@id='postcode']")
+		private WebElement regzip;	
+		
+	//reg country
+		public WebElement getregcountry() {
+			return regcountry;
+		}
+		@FindBy(xpath="//*[@id='id_country']")
+		private WebElement regcountry;	
+
+		
+	//reg mobileno
+		public WebElement getregmobileno() {
+			return regmobileno;
+		}
+		@FindBy(xpath="//*[@id='phone_mobile']")
+		private WebElement regmobileno;	
+		
+	//reg Address1
+		public WebElement getregaddress1() {
+			return regaddress1;
+		}
+		@FindBy(xpath="//*[@id='alias']")
+		private WebElement regaddress1;
+		
+	//click on register button
+			@FindBy(xpath="//*[@id='authentication']")
+			private WebElement regbtn;
+			public WebElement getSubmitregbtn() {
+				return regbtn;
+			}		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+    @FindBy(xpath ="(//input[contains(@class,'is_required validate account_input form-control')])[2]")
+
+	private WebElement email;
+
+
 	@FindBy(xpath="//input[@name='firstname']")
 	private WebElement firstnamefb;
 	@FindBy(xpath="//input[@name='lastname']")
@@ -148,9 +295,8 @@ public void setClosepopup(WebElement closepopup) {
 	this.closepopup = closepopup;
 }
 
-	@FindBy(id = "loginbutton")
-	private WebElement btn;
-	@FindBy(xpath ="//button[@class='_2AkmmA _29YdH8']")
+	
+	@FindBy(id ="SubmitLogin")
 	private WebElement closepopup;
 	
 	@FindBy(xpath="//input[@class='LM6RPg']")
@@ -222,16 +368,15 @@ public void setStartdate(WebElement startdate) {
 		return searchbox;
 	}
 
-	public WebElement getUserName() {
-		return userName;
-	}
+	
+	
+	
 
-	public WebElement getPassword() {
-		return password;
-	}
+	
 
-	public WebElement getBtn() {
-		return btn;
+	public WebElement sigin() {
+		// TODO Auto-generated method stub
+		return signin;
 	}
 
 }

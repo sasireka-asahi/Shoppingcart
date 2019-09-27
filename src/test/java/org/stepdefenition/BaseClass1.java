@@ -26,9 +26,14 @@ public class BaseClass1 {
 	public static WebDriver driver;
 
 	public static WebDriver LaunchBrowser() {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Navin\\seleniumproject\\driver\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\PC\\Desktop\\Shoppingpoc1\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		return driver;
+	}
+//Click on Signin button
+	public static void Click(WebElement e) {
+		e.click();
 	}
 
 	public static void goToUrl(String url) {
@@ -37,9 +42,6 @@ public class BaseClass1 {
 
 	public static void insertValues(WebElement e, String u) {
 		e.sendKeys(u);
-	}
-public static void Click(WebElement e) {
-		e.click();
 	}
 
 	public static void dropdown(WebElement e) {

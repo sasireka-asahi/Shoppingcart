@@ -1,44 +1,48 @@
-Feature: To Validate the login functionality
+Feature: Login Action
 
 Background:
-Given User is in loginpage
+
+	Given User is in landing page
+	When User has to click the Signin button
+	Then Signin button navigate to open the  Authentication page
+
+#Scenario Outline: : Verify signin page invalid input
+#	When User has to enter the invalid "<userName>","<password>" and click the login button
+#	Then promopt the error message
+#	Then close the browser
+#Examples:
+#|userName|password|
+#|sasireka|Asahi@123|
+#|s#$$##|asahi3|
+
+#Scenario Outline: : Verify signin page valid input
+#	Given User is in Signinpage and verify tiltle
+#	When User has to enter the valid "<userName>","<password>" and click the login button
+#	Then Navigate to open the Home page
+#	Then close the browser
+#Examples:
+#|userName|password|
+#|sasireka@mail.asahitechnologies.com|Asahi@123|
 
 
+#Scenario Outline: : Verify signup page invalid input
+#	When User has to enter the invalid "<email>" "<firstname>","<lastname>","<password>","<Address>","<city>","<state>","<Zip>","<country>","<mobileno>","<Address1>" and click the register button and click the register button
+#	Then Prompt the error
+#	Then close the browser
+#Examples:
+#|email|firstname|lastname|password|Address|city|state|Zip|country|mobileno|Address1|
+#	|ss3@mail.com|sree|ji|Asahi|Asahi,46 Fanepet 2nd Street|chenn|aaaa|@#$$12|cdf|9944021251|address1|
+#	|ss4@mail.com|niki|raj|Asahi|Asahi,46 Fanepet 2nd Street|chenn|aaaa|99|cdf|2345|address1|
+#	|ss5@mail.com|haritha|r|A|address|chenn|aaaa|600091|cdf|2345|address1|
+#|sscom|sasi|r|Asahi|Asahi,46 Fanepet 2nd Street|chenn|aaaa|99|cdfedf|2345|address1|
+#|s#$3!@@com|vinay|r|Asahi|Asahi,46 Fanepet 2nd Street|chennai|aaaa|600091|cdf|2345|address1|*/
 
 
-Scenario Outline: To verify login page
+Scenario Outline: : Verify signup page valid input
+	When User has to enter the valid "<email>" "<firstname>","<lastname>","<password>","<Address>","<city>","<state>","<Zip>","<country>","<mobileno>","<Address1>" and click the register button and click the register button
+	Then close the browser
+Examples:
+|email|firstname|lastname|password|Address|city|state|Zip|country|mobileno|Address1|
+|ss12345@mail.com|ram|sita|Asahi@123|Asahi,46 Fanepet 2nd Street|chennai|32|600091|United States|9944021254|address1|
 
 
-When User has to enter the "<username>","<password>" and click the login button
-
-Then when user enters the wrong credentials then user should not able to login to Homepage 
-
-Then close the browser
-
-
-Examples: 
-   |username|password|
-   |Navin|12345|
-   |Kumar|54321|
-   |Suresh|78999|
-   |Vijay|444444|
-
-Scenario Outline: To verify the registration page
-
-
-When User has to enter the "<firstname>","<lastname>","<mobilenumber>","<password>","<day>","<month>","<year>" and click the register button
-
-Then when user enters the correct then otp is generated to their mobile number 
-
-
-Then close the browser
-
-Examples: 
-   |firstname|lastname|mobilenumber|password|day|month|year|
-      |Navin|kumar|9997777444|Navin@123|12|Apr|1995|
-         |Kavin|Kumar|7778888999|Kumar@123|13|Jun|2001|
-          |Saravanan|nandha|44444555554|nandha@123|12|Jul|2005|
-         |anand|Kumar|7777788888|singa@123|13|Mar|1984|
-      
-   
-  
